@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DigiPed &#211;v&#243; – Digit&#225;lis alkalmaz&#225;sok kisgyermekkorban</title>
+<meta name="description" content="Online kurzus óvodapedagógus hallgatók számára a digitális alkalmazások kisgyermekkori felhasználásáról">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<!-- ====== HEADER ====== -->
+<header class="header">
+  <div class="container header__inner">
+    <a href="#" class="header__logo">
+      <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="DigiPed Óvó logó">
+        <rect width="36" height="36" rx="8" fill="var(--color-primary)"/>
+        <path d="M8 18c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+        <circle cx="13" cy="20" r="3" fill="#fff" opacity="0.9"/>
+        <circle cx="23" cy="20" r="3" fill="#fff" opacity="0.9"/>
+        <path d="M15 26c0 0 1.5 2 3 2s3-2 3-2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      DigiPed &#211;v&#243;
+    </a>
+
+    <button class="mobile-menu-btn" onclick="document.querySelector('.header__nav').classList.toggle('active')" aria-label="Menü">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+
+    <nav class="header__nav">
+      <a href="#modulok">Modulok</a>
+      <a href="#tananyag">Tananyag</a>
+      <a href="#vizsga">Vizsga</a>
+      <a href="#ertekeles">&#201;rt&#233;kel&#233;s</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Témaváltás">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ====== HERO ====== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero__grid">
+      <div>
+        <h1 class="hero__title">Digit&#225;lis alkalmaz&#225;sok kisgyermekkorban</h1>
+        <p class="hero__subtitle">Online kieg&#233;sz&#237;t&#337; kurzus &#243;vodapedag&#243;gus hallgat&#243;k sz&#225;m&#225;ra – a jelenl&#233;ti &#243;r&#225;k tananyag&#225;nak &#246;n&#225;ll&#243; feldolgoz&#225;sa &#233;s elm&#233;ly&#237;t&#233;se.</p>
+        <div style="display: flex; gap: var(--space-3); flex-wrap: wrap;">
+          <a href="#modulok" class="btn btn--primary">Modulok megn&#233;z&#233;se</a>
+          <a href="#ertekeles" class="btn btn--accent">&#201;rt&#233;kel&#233;s kit&#246;lt&#233;se</a>
+        </div>
+      </div>
+      <div class="hero__image">
+        <img src="./assets/hero.png" alt="Gyerekek digitális eszközökkel az óvodában" loading="eager">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== COURSE OVERVIEW ====== -->
+<section class="section" id="modulok">
+  <div class="container">
+    <h2 class="section__title reveal">A kurzus moduljai</h2>
+    <p class="section__subtitle reveal">A lev&#233;lez&#337; k&#233;pz&#233;s 12 alkalm&#225;nak t&#233;m&#225;it &#246;n&#225;ll&#243;an is feldolgozhatod az al&#225;bbi modulokon kereszt&#252;l.</p>
+
+    <div class="modules-grid">
+      <div class="module-card reveal" onclick="scrollToModule('mod1')">
+        <div class="module-card__number">1</div>
+        <h3 class="module-card__title">Inform&#225;ci&#243;keres&#233;s &#233;s hiteless&#233;g</h3>
+        <p class="module-card__desc">K&#233;padatb&#225;zisok, hivatkoz&#225;sok, &#225;lh&#237;rek felismer&#233;se – a kritikus digit&#225;lis gondolkod&#225;s alapjai.</p>
+        <span class="module-card__tag">1-2. alkalom</span>
+      </div>
+      <div class="module-card reveal" onclick="scrollToModule('mod2')">
+        <div class="module-card__number">2</div>
+        <h3 class="module-card__title">Kollaborat&#237;v fel&#252;letek</h3>
+        <p class="module-card__desc">Online k&#233;rd&#337;&#237;vek, t&#225;bl&#225;zatok, prezent&#225;ci&#243;k k&#246;z&#246;s szerkeszt&#233;se Google Drive seg&#237;ts&#233;g&#233;vel.</p>
+        <span class="module-card__tag">3-4. alkalom</span>
+      </div>
+      <div class="module-card reveal" onclick="scrollToModule('mod3')">
+        <div class="module-card__number">3</div>
+        <h3 class="module-card__title">Digit&#225;lis tananyagok</h3>
+        <p class="module-card__desc">LearningApps, Wordwall, Kahoot – interakt&#237;v feladatok k&#233;sz&#237;t&#233;se &#243;vod&#225;soknak.</p>
+        <span class="module-card__tag">5-6. alkalom</span>
+      </div>
+      <div class="module-card reveal" onclick="scrollToModule('mod4')">
+        <div class="module-card__number">4</div>
+        <h3 class="module-card__title">K&#233;pszerkeszt&#233;s &#233;s AI</h3>
+        <p class="module-card__desc">Canva, AI k&#233;pgener&#225;l&#225;s, infografik&#225;k, megh&#237;v&#243;k, fejleszt&#337; feladatlapok k&#233;sz&#237;t&#233;se.</p>
+        <span class="module-card__tag">7-8. alkalom</span>
+      </div>
+      <div class="module-card reveal" onclick="scrollToModule('mod5')">
+        <div class="module-card__number">5</div>
+        <h3 class="module-card__title">Prezent&#225;ci&#243;szerkeszt&#233;s</h3>
+        <p class="module-card__desc">Diaminta, el&#225;gaz&#225;sos dia, hivatkoz&#225;sok, t&#225;j&#233;koztat&#243; prezent&#225;ci&#243;k &#233;s f&#233;ny&#250;js&#225;g.</p>
+        <span class="module-card__tag">9-10. alkalom</span>
+      </div>
+      <div class="module-card reveal" onclick="scrollToModule('mod6')">
+        <div class="module-card__number">6</div>
+        <h3 class="module-card__title">Robotika az &#243;vod&#225;ban</h3>
+        <p class="module-card__desc">Padl&#243;robotok (Bee-Bot, eg&#233;r), robotp&#225;ly&#225;k, kerett&#246;rt&#233;netek &#233;s algoritmikus gondolkod&#225;s.</p>
+        <span class="module-card__tag">11-12. alkalom</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== DETAILED MODULES ====== -->
+<section class="section section--alt" id="tananyag">
+  <div class="container container--narrow">
+    <h2 class="section__title reveal">R&#233;szletes tananyag</h2>
+    <p class="section__subtitle reveal">Nyisd ki a modul&#243;kat az elm&#233;leti h&#225;tt&#233;r, gyakorlati feladatok &#233;s forr&#225;sok megn&#233;z&#233;s&#233;hez.</p>
+
+    <!-- MODULE 1 -->
+    <div class="module-detail reveal" id="mod1">
+      <div class="module-detail__header" onclick="toggleModule(this)">
+        <div class="module-detail__icon" style="background: var(--color-info-light); color: var(--color-info);">&#128269;</div>
+        <div class="module-detail__title">1. Inform&#225;ci&#243;keres&#233;s, k&#233;padatb&#225;zisok, hiteless&#233;g</div>
+        <svg class="module-detail__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="module-detail__content">
+        <div class="module-detail__body">
+          <h4>Tanul&#225;si c&#233;lok</h4>
+          <ul>
+            <li>Az &#225;lh&#237;rek felismer&#233;s&#233;nek k&#233;pess&#233;ge</li>
+            <li>Ingyenes k&#233;padatb&#225;zisok ismerete &#233;s haszn&#225;lata</li>
+            <li>Megfelel&#337; hivatkoz&#225;sok k&#233;sz&#237;t&#233;se</li>
+            <li>Hang- &#233;s vide&#243;anyagok keres&#233;se</li>
+          </ul>
+
+          <h4>&#193;lh&#237;rek felismer&#233;se</h4>
+          <p>A digit&#225;lis &#225;llampolg&#225;rs&#225;g egyik alapvet&#337; k&#233;szs&#233;ge a kritikus gondolkod&#225;s &#233;s a t&#233;nyellenőrz&#233;s. Pr&#243;b&#225;ld ki az al&#225;bbi szimul&#225;torokat:</p>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-3) 0;">
+            <a href="https://www.internetmatters.org/issues/fake-news-and-misinformation-advice-hub/find-the-fake/" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; Find the Fake</a>
+            <a href="https://mediasmarts.ca/quiz/break-fake-news" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; Break Fake News</a>
+            <a href="https://www.theguardian.com/newswise/2021/feb/04/fake-or-real-headlines-quiz-newswise-2021" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; Guardian Quiz</a>
+          </div>
+
+          <h4>Ingyenes k&#233;padatb&#225;zisok</h4>
+          <p>Az al&#225;bbi oldalakon szabad felhaszn&#225;l&#225;s&#250; k&#233;peket, ikonokat &#233;s illuszt&#225;ci&#243;kat tal&#225;lhatsz:</p>
+          <ul>
+            <li><a href="https://pixabay.com" target="_blank" rel="noopener noreferrer">Pixabay</a> – ingyenes fot&#243;k &#233;s illusztr&#225;ci&#243;k</li>
+            <li><a href="https://www.pexels.com" target="_blank" rel="noopener noreferrer">Pexels</a> – szabad felhaszn&#225;l&#225;s&#250; fot&#243;k</li>
+            <li><a href="https://www.flaticon.com" target="_blank" rel="noopener noreferrer">Flaticon</a> – ikonok</li>
+            <li><a href="https://www.cleanpng.com" target="_blank" rel="noopener noreferrer">CleanPNG</a> – &#225;tl&#225;tsz&#243; h&#225;tter&#369; k&#233;pek</li>
+            <li><a href="https://www.iconarchive.com" target="_blank" rel="noopener noreferrer">IconArchive</a> – ikongy&#369;jtem&#233;ny</li>
+            <li><a href="http://www.clker.com" target="_blank" rel="noopener noreferrer">Clker</a> – clipart-ok</li>
+          </ul>
+
+          <h4>Padlet haszn&#225;lata</h4>
+          <p>A Padlet egy online &#8222;fali&#250;js&#225;g&#8221;, ahol gy&#369;jtem&#233;nyeket hozhatsz l&#233;tre hivatkoz&#225;sokkal, k&#233;pekkel &#233;s le&#237;r&#225;sokkal. Ez lesz az &#243;rai munk&#225;id gy&#369;jt&#337;helye is.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-3) 0;">
+            <a href="https://padlet.com" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; Padlet</a>
+            <a href="https://ta-legacy.padlet.com" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; Padlet Legacy</a>
+          </div>
+
+          <div class="info-box info-box--tip">
+            <strong>Feladat:</strong> K&#233;sz&#237;ts egy Padlet gy&#369;jtem&#233;nyt a saj&#225;t v&#225;lasztott t&#233;m&#225;dban, hivatkoz&#225;sokkal, k&#233;pekkel &#233;s illusztr&#225;ci&#243;kkal!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 2 -->
+    <div class="module-detail reveal" id="mod2">
+      <div class="module-detail__header" onclick="toggleModule(this)">
+        <div class="module-detail__icon" style="background: var(--color-accent-light); color: var(--color-accent);">&#129309;</div>
+        <div class="module-detail__title">2. Kollaborat&#237;v fel&#252;letek &#233;s Google Drive</div>
+        <svg class="module-detail__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="module-detail__content">
+        <div class="module-detail__body">
+          <h4>Tanul&#225;si c&#233;lok</h4>
+          <ul>
+            <li>Online k&#233;rd&#337;&#237;v szerkeszt&#233;se (Google Forms)</li>
+            <li>K&#246;z&#246;s t&#225;bl&#225;zat szerkeszt&#233;se &#233;s elemz&#233;se</li>
+            <li>Csapatmunka prezent&#225;ci&#243;ban (Google Slides)</li>
+          </ul>
+
+          <h4>Google Drive funkci&#243;k</h4>
+          <p>A Google Drive lehetőv&#233; teszi a val&#243;s idej&#369; k&#246;z&#246;s szerkeszt&#233;st. A k&#233;pz&#233;s sor&#225;n megismerj&#252;k a Google Dokumentumok, T&#225;bl&#225;zatok &#233;s Diaszem&#233;ltetők haszn&#225;lat&#225;t.</p>
+
+          <h4>K&#246;z&#246;s prezent&#225;ci&#243;</h4>
+          <p>2-3 f&#337;s csapatban prezent&#225;ci&#243;t szerkesztetek – k&#233;pekkel, le&#237;r&#225;ssal, anim&#225;ci&#243;val. A projektmunka fejleszti a digit&#225;lis egy&#252;ttm&#369;k&#246;d&#233;s k&#233;szs&#233;g&#233;t.</p>
+
+          <div class="info-box info-box--info">
+            <strong>Tudtad?</strong> A Google Forms seg&#237;ts&#233;g&#233;vel gy&#369;jt&#246;tt adatokat automatikusan t&#225;bl&#225;zatba rendezheted, &#233;s k&#246;nnyen elemezheted is!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 3 -->
+    <div class="module-detail reveal" id="mod3">
+      <div class="module-detail__header" onclick="toggleModule(this)">
+        <div class="module-detail__icon" style="background: var(--color-success-light); color: var(--color-success);">&#127922;</div>
+        <div class="module-detail__title">3. Digit&#225;lis tananyagok &#233;s interakt&#237;v feladatok</div>
+        <svg class="module-detail__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="module-detail__content">
+        <div class="module-detail__body">
+          <h4>Tanul&#225;si c&#233;lok</h4>
+          <ul>
+            <li>P&#225;ros&#237;t&#243;, csoportos&#237;t&#243;, t&#233;rk&#233;p t&#237;pus&#250; feladatok k&#233;sz&#237;t&#233;se</li>
+            <li>T&#233;m&#225;k: &#225;llatok, h&#225;ztart&#225;s, gy&#252;m&#246;lcs&#246;k stb.</li>
+            <li>Kahoot kv&#237;z, sz&#243;felh&#337;, digit&#225;lis t&#225;bla haszn&#225;lata</li>
+          </ul>
+
+          <h4>LearningApps</h4>
+          <p>Ingyenes platform, ahol interakt&#237;v tanul&#225;si modulokat hozhatsz l&#233;tre. Ideálisak óvodás korhoz igazított feladatok: p&#225;ros&#237;t&#243;, csoportos&#237;t&#243;, sor-rendez&#337;, kv&#237;z.</p>
+          <a href="https://www.learningapps.org" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; LearningApps</a>
+
+          <h4>Wordwall</h4>
+          <p>K&#246;nnyen haszn&#225;lhat&#243; feladatk&#233;sz&#237;t&#337;, ahol k&#252;l&#246;nb&#246;z&#337; sablonokb&#243;l v&#225;logathatsz. Az elk&#233;sz&#252;lt feladatokat megoszthatod a gyerekekkel.</p>
+          <a href="https://www.wordwall.net" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; Wordwall</a>
+
+          <h4>Tov&#225;bbi eszk&#246;z&#246;k</h4>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--space-2); margin: var(--space-3) 0;">
+            <a href="https://www.kahoot.com" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; Kahoot</a>
+            <a href="https://www.wordart.com" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; WordArt</a>
+            <a href="https://www.classroomscreen.com" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; ClassroomScreen</a>
+          </div>
+
+          <div class="info-box info-box--tip">
+            <strong>Feladat:</strong> K&#233;sz&#237;ts egy p&#225;ros&#237;t&#243; &#233;s egy csoportos&#237;t&#243; feladatot a LearningApps vagy Wordwall seg&#237;ts&#233;g&#233;vel! T&#233;ma: &#225;llatok, gy&#252;m&#246;lcs&#246;k vagy h&#225;ztart&#225;si eszk&#246;z&#246;k.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 4 -->
+    <div class="module-detail reveal" id="mod4">
+      <div class="module-detail__header" onclick="toggleModule(this)">
+        <div class="module-detail__icon" style="background: var(--color-error-light); color: var(--color-error);">&#127912;</div>
+        <div class="module-detail__title">4. K&#233;pszerkeszt&#233;s, AI k&#233;pgener&#225;l&#225;s &#233;s grafika</div>
+        <svg class="module-detail__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="module-detail__content">
+        <div class="module-detail__body">
+          <h4>Tanul&#225;si c&#233;lok</h4>
+          <ul>
+            <li>Canva haszn&#225;lata: infografik&#225;k, megh&#237;v&#243;k, robotp&#225;ly&#225;k</li>
+            <li>AI k&#233;pgener&#225;l&#225;s (Canva, Copilot vagy m&#225;s eszk&#246;z&#246;k)</li>
+            <li>Fejleszt&#337; feladatlapok &#233;s sz&#237;nez&#337;k k&#233;sz&#237;t&#233;se</li>
+            <li>Online puzzle k&#233;sz&#237;t&#233;se</li>
+          </ul>
+
+          <h4>Canva</h4>
+          <p>A Canva egy sokoldalú grafikai tervez&#337; eszk&#246;z, amellyel dokumentumokat, prezent&#225;ci&#243;kat, megh&#237;v&#243;kat &#233;s infografik&#225;kat k&#233;sz&#237;thetsz. A pedag&#243;giai felhaszn&#225;l&#225;shoz k&#252;l&#246;n&#246;sen hasznos az oktat&#225;si sablongy&#369;jtem&#233;nye.</p>
+          <a href="https://www.canva.com" target="_blank" rel="noopener noreferrer" class="resource-link">&#128279; Canva</a>
+
+          <h4>AI k&#233;pgener&#225;l&#225;s</h4>
+          <p>A mesters&#233;ges intelligencia seg&#237;ts&#233;g&#233;vel egyedi k&#233;peket hozhatsz l&#233;tre &#243;vodai foglalkoz&#225;sokhoz, illusztr&#225;ci&#243;kat mese&#233;lm&#233;nyekhez, vagy kreat&#237;v sz&#237;nez&#337; oldalakat.</p>
+
+          <h4>Tov&#225;bbi eszk&#246;z&#246;k</h4>
+          <ul>
+            <li><a href="https://www.jigsawplanet.com" target="_blank" rel="noopener noreferrer">JigsawPlanet</a> – online puzzle k&#233;sz&#237;t&#233;se</li>
+            <li><a href="https://magicschool.ai" target="_blank" rel="noopener noreferrer">MagicSchool AI</a> – AI eszk&#246;z pedag&#243;gusoknak</li>
+            <li>Paint – alapvet&#337; k&#233;pszerkeszt&#233;s</li>
+          </ul>
+
+          <div class="info-box info-box--tip">
+            <strong>Feladat:</strong> K&#233;sz&#237;ts egy ny&#225;ri programokr&#243;l sz&#243;l&#243; infografik&#225;t &#233;s egy any&#225;knapi megh&#237;v&#243;t Canv&#225;ban! Pr&#243;b&#225;lj ki AI k&#233;pgener&#225;l&#225;st is!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 5 -->
+    <div class="module-detail reveal" id="mod5">
+      <div class="module-detail__header" onclick="toggleModule(this)">
+        <div class="module-detail__icon" style="background: #f0e6fa; color: #7a39bb;">&#128187;</div>
+        <div class="module-detail__title">5. Prezent&#225;ci&#243;szerkeszt&#233;s (PowerPoint, Canva)</div>
+        <svg class="module-detail__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="module-detail__content">
+        <div class="module-detail__body">
+          <h4>Tanul&#225;si c&#233;lok</h4>
+          <ul>
+            <li>Diaminta megismer&#233;se &#233;s haszn&#225;lata</li>
+            <li>Hivatkoz&#225;sok kezel&#233;se: bels&#337; &#233;s k&#252;ls&#337; hivatkoz&#225;sok</li>
+            <li>K&#233;p, sz&#246;veg &#233;s akci&#243;gomb alapú hivatkoz&#225;sok</li>
+            <li>El&#225;gaz&#225;sos &#233;s tr&#252;kk&#246;s prezent&#225;ci&#243;k</li>
+            <li>T&#225;j&#233;koztat&#243; prezent&#225;ci&#243; &#233;s f&#233;ny&#250;js&#225;g be&#225;ll&#237;t&#225;sa</li>
+          </ul>
+
+          <h4>El&#225;gaz&#225;sos prezent&#225;ci&#243;</h4>
+          <p>Az el&#225;gaz&#225;sos prezent&#225;ci&#243; lehetőv&#233; teszi, hogy a n&#233;z&#337; maga v&#225;lassza ki, milyen &#250;tvonalon halad v&#233;gig a tartalmon. Ez interakt&#237;v &#233;lm&#233;nyt ny&#250;jt, &#233;s j&#243;l haszn&#225;lhat&#243; oktat&#225;si c&#233;lokra.</p>
+
+          <h4>F&#233;ny&#250;js&#225;g</h4>
+          <p>A f&#233;ny&#250;js&#225;g (kiosk m&#243;d) be&#225;ll&#237;t&#225;ssal a prezent&#225;ci&#243; automatikusan &#250;jraindul, &#237;gy kivet&#237;t&#337;n folyamatosan j&#225;tsz&#243;dhat – t&#246;k&#233;letes t&#225;j&#233;koztat&#243; eszk&#246;z sz&#252;l&#337;i &#233;rtekezletre.</p>
+
+          <div class="info-box info-box--warning">
+            <strong>Fontos:</strong> A prezent&#225;ci&#243;ban l&#233;v&#337; hivatkoz&#225;sok mutathatnak a di&#225;n bel&#252;l &#233;s k&#237;v&#252;lre is. Gyakorold mindkét t&#237;pust!
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODULE 6 -->
+    <div class="module-detail reveal" id="mod6">
+      <div class="module-detail__header" onclick="toggleModule(this)">
+        <div class="module-detail__icon" style="background: var(--color-warning-light); color: var(--color-warning);">&#129302;</div>
+        <div class="module-detail__title">6. Robotika az &#243;vod&#225;ban</div>
+        <svg class="module-detail__chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+      </div>
+      <div class="module-detail__content">
+        <div class="module-detail__body">
+          <h4>Tanul&#225;si c&#233;lok</h4>
+          <ul>
+            <li>Az algoritmikus gondolkod&#225;s alapjai</li>
+            <li>Pontos utas&#237;t&#225;sok kihívása</li>
+            <li>&#211;vod&#225;s korban használható robotok megismerése (Bee-Bot, eg&#233;r)</li>
+            <li>Robotp&#225;ly&#225;k tervez&#233;se &#233;s kerett&#246;rt&#233;netek &#237;r&#225;sa</li>
+          </ul>
+
+          <h4>Mi is az az algoritmus?</h4>
+          <p>Az algoritmus egyszer&#369;en fogalmazva: l&#233;p&#233;sek sorozata egy feladat megold&#225;s&#225;hoz. A gyerekek sz&#225;m&#225;ra ezt a padl&#243;robotokkal val&#243; j&#225;t&#233;kon kereszt&#252;l mutatjuk be: el&#337;re, h&#225;tra, fordulj jobbra, fordulj balra.</p>
+
+          <h4>Bee-Bot &#233;s padl&#243;robotok</h4>
+          <p>A Bee-Bot egy m&#233;hecske form&#225;j&#250; padl&#243;robot, amelyet egyszer&#369; gombnyom&#225;sokkal programozhatnak a gyerekek. Fejleszti a t&#233;ri t&#225;j&#233;koz&#243;d&#225;st, a probl&#233;mamegold&#225;st &#233;s a sorrendi gondolkod&#225;st.</p>
+
+          <h4>Robotp&#225;lya tervez&#233;se</h4>
+          <p>K&#233;sz&#237;ts egy robotp&#225;ly&#225;t Canv&#225;ban, &#237;rj hozz&#225; egy kerett&#246;rt&#233;netet &#233;s 2 feladatot, amelyet az &#243;vod&#225;sok a Bee-Bot-tal teljes&#237;thetnek!</p>
+
+          <div class="info-box info-box--tip">
+            <strong>Feladat:</strong> Tervezz egy robotp&#225;ly&#225;t Canv&#225;ban, &#237;rj hozz&#225; kerett&#246;rt&#233;netet &#233;s k&#233;sz&#237;ts 2 feladatot!
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ====== JELENLÉTI ÓRÁK REFERENCE ====== -->
+<section class="section">
+  <div class="container container--narrow">
+    <h2 class="section__title reveal">Jelenl&#233;ti &#243;r&#225;k anyagai</h2>
+    <p class="section__subtitle reveal">A jelenl&#233;ti &#243;r&#225;kon feldolgozott prezent&#225;ci&#243;k, eszk&#246;z&#246;k &#233;s t&#233;m&#225;k el&#233;rhetőek a Wakelet gy&#369;jtem&#233;nyekben.</p>
+
+    <div class="exam-info reveal">
+      <a href="https://wakelet.com/wake/ekZslvftltTllfuPsD9w-" target="_blank" rel="noopener noreferrer" class="exam-card" style="text-decoration: none; color: inherit;">
+        <div class="exam-card__icon">&#128218;</div>
+        <div class="exam-card__title">DIGIPED &#211;V&#211; 1</div>
+        <div class="exam-card__desc">Jelenl&#233;ti &#243;r&#225;k gy&#369;jtem&#233;nye: digit&#225;lis pedag&#243;gia, robotika, Canva, AI k&#233;pgener&#225;l&#225;s, prezent&#225;ci&#243;.</div>
+      </a>
+      <a href="https://wakelet.com/wake/ekZslvftltTllfuPsD9w-" target="_blank" rel="noopener noreferrer" class="exam-card" style="text-decoration: none; color: inherit;">
+        <div class="exam-card__icon">&#128736;</div>
+        <div class="exam-card__title">Elm&#233;leti h&#225;tt&#233;r</div>
+        <div class="exam-card__desc">A digit&#225;lis pedag&#243;gia bevezet&#233;se, SAMR-modell, Bloom-taxon&#243;mia, tanul&#225;selm&#233;letek.</div>
+      </a>
+      <a href="https://www.youtube.com/watch?v=JKe0RLtyCCg" target="_blank" rel="noopener noreferrer" class="exam-card" style="text-decoration: none; color: inherit;">
+        <div class="exam-card__icon">&#127909;</div>
+        <div class="exam-card__title">A digit&#225;lis kor gyermekei</div>
+        <div class="exam-card__desc">Andr&#225;s előad&#225;sa – a reflexi&#243;hoz sz&#252;ks&#233;ges vide&#243;.</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ====== VIZSGA INFO ====== -->
+<section class="section section--alt" id="vizsga">
+  <div class="container container--narrow">
+    <h2 class="section__title reveal">Vizsga &#233;s &#233;rt&#233;kel&#233;s</h2>
+    <p class="section__subtitle reveal">A kurzus &#233;rt&#233;kel&#233;se k&#233;t r&#233;szb&#337;l &#225;ll: Padlet portf&#243;li&#243; &#233;s online vizsga. Az &#233;rdemjegy a ketto&#779; &#225;tlaga.</p>
+
+    <div class="exam-info reveal">
+      <div class="exam-card">
+        <div class="exam-card__icon">&#128203;</div>
+        <div class="exam-card__title">Padlet portf&#243;li&#243;</div>
+        <div class="exam-card__desc">Minden &#243;rai munk&#225;dat felt&#246;lt&#246;d egy Padlet fel&#252;letre. A munk&#225;k alapj&#225;n kapsz egy &#233;rdemjegyet. Egy dokumentumba illeszd be a Padlet k&#233;perny&#337;k&#233;p&#233;t a lead&#225;s pillanat&#225;ban.</div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-card__icon">&#128187;</div>
+        <div class="exam-card__title">Online vizsga</div>
+        <div class="exam-card__desc">A Redmenta felületen, szinkronban a Neptunban felvett id&#337;ponttal. A vizsg&#225;ban a f&#233;l&#233;v sor&#225;n tanult anyagokb&#243;l kapsz k&#233;rd&#233;seket.</div>
+      </div>
+      <div class="exam-card">
+        <div class="exam-card__icon">&#9997;&#65039;</div>
+        <div class="exam-card__title">Reflexi&#243;</div>
+        <div class="exam-card__desc">&#205;rj reflexi&#243;t Andr&#225;s "A digit&#225;lis kor gyermekei" el&#337;ad&#225;s&#225;nak egy meghat&#225;rozott gondolat&#225;r&#243;l.</div>
+      </div>
+    </div>
+
+    <div class="info-box info-box--warning reveal mt-6">
+      <strong>Hat&#225;rid&#337;:</strong> 2026. m&#225;jus 31. &nbsp;|&nbsp; A jav&#237;t&#225;sra 10 munkanap &#225;ll rendelkez&#233;sre. A feladatokb&#243;l nem hi&#225;nyozhat semmi!
+    </div>
+  </div>
+</section>
+
+<!-- ====== ONLINE QUIZ ====== -->
+<section class="section" id="ertekeles">
+  <div class="container container--narrow">
+    <h2 class="section__title reveal">Online &#233;rt&#233;kel&#233;s</h2>
+    <p class="section__subtitle reveal">T&#246;ltsd ki az &#233;rt&#233;kel&#233;st a kurzus anyag&#225;b&#243;l. Az eredm&#233;ny automatikusan elk&#252;ld&#233;sre ker&#252;l az oktat&#243;nak.</p>
+
+    <div class="quiz-container reveal" id="quizContainer">
+      <div class="quiz-header">
+        <h3>Digit&#225;lis alkalmaz&#225;sok kisgyermekkorban – &#201;rt&#233;kel&#233;s</h3>
+        <p>15 k&#233;rd&#233;s a kurzus anyag&#225;b&#243;l. Az eredm&#233;ny automatikusan elk&#252;ld&#233;sre ker&#252;l.</p>
+      </div>
+
+      <!-- Identification form -->
+      <div id="quizIntro" class="quiz-form">
+        <div class="quiz-form__field">
+          <label for="studentName">N&#233;v *</label>
+          <input type="text" id="studentName" placeholder="Teljes neved" required>
+        </div>
+        <div class="quiz-form__field">
+          <label for="neptunCode">Neptun k&#243;d *</label>
+          <input type="text" id="neptunCode" placeholder="Pl. ABC123" required maxlength="6" style="text-transform: uppercase;">
+        </div>
+        <button class="btn btn--primary mt-4" onclick="startQuiz()">&#201;rt&#233;kel&#233;s megkezd&#233;se</button>
+        <p style="font-size: var(--text-xs); color: var(--color-text-faint); margin-top: var(--space-3);">Az eredm&#233;nyt automatikusan elk&#252;ldj&#252;k az oktat&#243; e-mail c&#237;m&#233;re.</p>
+      </div>
+
+      <!-- Quiz questions (hidden initially) -->
+      <div id="quizQuestions" class="hidden"></div>
+
+      <!-- Quiz result (hidden initially) -->
+      <div id="quizResult" class="hidden"></div>
+
+      <!-- Progress bar -->
+      <div class="quiz-progress" id="quizProgress" style="display: none;">
+        <div class="quiz-progress__bar">
+          <div class="quiz-progress__fill" id="progressFill" style="width: 0%;"></div>
+        </div>
+        <span class="quiz-progress__text" id="progressText">0/15</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+  <div class="container">
+    <p>DigiPed &#211;v&#243; – Digit&#225;lis alkalmaz&#225;sok kisgyermekkorban | Levelez&#337; k&#233;pz&#233;s 2025-2026</p>
+    <p style="margin-top: var(--space-2);">
+      <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+    </p>
+  </div>
+</footer>
+
+<script src="./app.js"></script>
+</body>
+</html>
